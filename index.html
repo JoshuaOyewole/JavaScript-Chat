@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Pop Up Chat</title>
+  <!--   <script src="https://kit.fontawesome.com/6b2284f8b4.js" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">orisfina</div>
+            <ul class="list-group">
+                <li class="list-item"><a href="#" class="list-link">HOME</a></li>
+                <li class="list-item"><a href="#" class="list-link">ABOUT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section-1">
+        <div class="wrapper">
+            <div class="primary-text">
+              <h1 class="text-title">
+                  <span class="head">Orisfina Media</span>
+                  <span class="sub">Lets Chat</span>
+              </h1>
+            </div>
+        </div>
+
+            <div class="chat-box" id="chat-box">
+                <div class="chat-header">Online</div>
+                <div class="sent-msg">
+                </div>
+                <input type="text" class="text-content" placeholder="Send us a Message..." />
+                <div class="btn">
+                    <div class="btn-send"  id="send"  onclick="sendMsg()">Send</div>
+                    <div class="btn-send" id="clear" >Clear Msg</div>
+                    <div class="btn-leave" onclick="closeChat()">Close Chat</div>
+                </div>
+                
+            </div>
+
+        <div class="chat-us" onclick="openChat()">
+            Chat with us
+        </div>
+     
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
